@@ -11,11 +11,20 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-   
+   //var bird2 = SKSpriteNode()
     
     
     
     override func didMove(to view: SKView) {
+        
+       /* let texture2 = SKTexture(imageNamed: "bird.png")
+        bird2 = SKSpriteNode(texture: texture2)
+        bird2.position = CGPoint(x: 0, y: 0)
+        bird2.size = CGSize(width: self.frame.width / 14    , height: self.frame.height / 8)
+        bird2.zPosition = 2
+        self.addChild(bird2)
+        */
+        
         
         
     }
