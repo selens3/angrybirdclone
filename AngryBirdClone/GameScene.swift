@@ -31,7 +31,7 @@ class GameScene: SKScene {
         bird = childNode(withName: "bird") as! SKSpriteNode
         bird.physicsBody = SKPhysicsBody(circleOfRadius: birdTexture.size().height / 15 )
         bird.physicsBody?.isDynamic = true
-        bird.physicsBody?.mass = 0.5
+        bird.physicsBody?.mass = 0.1
         bird.physicsBody?.affectedByGravity = false
         
         
@@ -88,6 +88,12 @@ class GameScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         
+        
+        
+        
+        //bird.physicsBody?.applyImpulse(CGVector(dx: 50, dy: 120))
+        //bird.physicsBody?.affectedByGravity = true
+        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -97,8 +103,7 @@ class GameScene: SKScene {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-    }
+    
     
     
     override func update(_ currentTime: TimeInterval) {
